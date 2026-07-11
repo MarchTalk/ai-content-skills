@@ -52,7 +52,9 @@
 
 ## 安装
 
-**Claude Code**：把 `skills/` 下你要的技能文件夹拷进 `~/.claude/skills/`（全局）或项目的 `.claude/skills/`：
+**不用命令行（推荐给非技术用户）**：去 [Releases 页面](https://github.com/MarchTalk/ai-content-skills/releases) 下载 zip 安装包，里面有一份三分钟装好的《安装说明.txt》（Mac / Windows 都有），解压拷贝即用。
+
+**Claude Code（命令行）**：把 `skills/` 下你要的技能文件夹拷进 `~/.claude/skills/`（全局）或项目的 `.claude/skills/`：
 
 ```bash
 git clone https://github.com/MarchTalk/ai-content-skills.git
