@@ -1,5 +1,9 @@
 # AI 内容技能集 · Content Creation Skills
 
+[![Stars](https://img.shields.io/github/stars/MarchTalk/ai-content-skills?style=flat&color=yellow)](https://github.com/MarchTalk/ai-content-skills/stargazers)
+[![License](https://img.shields.io/github/license/MarchTalk/ai-content-skills)](LICENSE)
+[![Latest Release](https://img.shields.io/github/v/release/MarchTalk/ai-content-skills)](https://github.com/MarchTalk/ai-content-skills/releases)
+
 > 一套给 AI 编程助手（Claude Code / Codex 等）用的中文内容创作技能，来自「隐拾三月·AI内容系统」的实战沉淀。
 >
 > A set of Chinese content-creation skills for AI coding agents (Claude Code, Codex, etc.), extracted from a working one-person content production system.
@@ -101,6 +105,10 @@ feedback-capture（人工反馈后：沉淀规则）
 ## 许可证
 
 MIT，允许商用——这是有意的：会用这套技能的人，本来就是拿它给自己的账号、自己的客户做内容的，禁了商用等于谁都不能用。方法免费送；针对具体账号的调校、语气训练和陪跑，是另一回事。
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=MarchTalk/ai-content-skills&type=Date)](https://star-history.com/#MarchTalk/ai-content-skills&Date)
 
 ---
 
