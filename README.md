@@ -10,6 +10,32 @@
 
 这不是提示词合集，是一套**带质检闸门的内容工作流零件**。每个技能都有明确的调用时机、工作步骤、输出格式和质检标准，AI 跑完能自查有没有做到位。
 
+![demo](assets/demo.gif)
+
+<sub>真实终端录制：clone 仓库 → 看技能目录 → 打开 `quality-gate` 的原文，其中一条硬规则是「AI 味一票否决」——不管质检结果其它项多好，AI 味太重直接判不通过。</sub>
+
+<details>
+<summary><strong>Read this in English</strong></summary>
+
+<br>
+
+This is not a prompt collection — it's a set of **quality-gated content workflow parts** for AI coding agents. Each skill has a clear trigger condition, a step-by-step process, an output format, and a quality checklist the agent can self-audit against.
+
+**Why this exists.** The real failure mode when using AI to write content isn't "it can't write" — it's that the output is generic and shallow (no detail that required actually checking a source), reads as obviously AI-generated (mechanical parallelism, "not X but Y" reversals, templated openers), gets graded with the wrong rubric (grading a personal-opinion piece like a sales pitch), and repeats the same mistake you already corrected. These 11 skills were grown around exactly those four problems, iterated over 6+ months on a real content account.
+
+**Skills at a glance** — gates (`material-research` forces real research before writing; `quality-gate` is the final checklist with an AI-tone veto; `feedback-capture` turns your corrections into persistent rules), pre-publish checks (`opening-gate` for hooks/titles, `flow-check` for drop-off points), judgment layers (`business-thinking`, `human-psychology-game`), and workflow parts (`content-positioning`, `topic-strategy`, `platform-distribution`, `visual-aesthetic`).
+
+**Install:**
+```bash
+git clone https://github.com/MarchTalk/ai-content-skills.git
+cp -r ai-content-skills/skills/* ~/.claude/skills/
+```
+Then restart Claude Code and call skills via `/quality-gate`, `/material-research`, etc., or just describe what you need — the skills are plain Markdown, so they also work in any agent that supports skill/instruction files (Codex included).
+
+License: MIT. Full skill tables and the recommended pipeline are in the Chinese section below (skill names and file paths are in English regardless).
+
+</details>
+
 ## 为什么会有这套东西
 
 用 AI 写内容，最大的问题从来不是"写不出来"，而是：
