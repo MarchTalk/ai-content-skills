@@ -23,7 +23,7 @@ This is not a prompt collection — it's a set of **quality-gated content workfl
 
 **Why this exists.** The real failure mode when using AI to write content isn't "it can't write" — it's that the output is generic and shallow (no detail that required actually checking a source), reads as obviously AI-generated (mechanical parallelism, "not X but Y" reversals, templated openers), gets graded with the wrong rubric (grading a personal-opinion piece like a sales pitch), and repeats the same mistake you already corrected. These 11 skills were grown around exactly those four problems, iterated over 6+ months on a real content account.
 
-**Skills at a glance** — gates (`material-research` forces real research before writing; `quality-gate` is the final checklist with an AI-tone veto; `feedback-capture` turns your corrections into persistent rules), pre-publish checks (`opening-gate` for hooks/titles, `flow-check` for drop-off points), judgment layers (`business-thinking`, `human-psychology-game`), and workflow parts (`content-positioning`, `topic-strategy`, `platform-distribution`, `visual-aesthetic`).
+**Skills at a glance** — gates (`material-research` forces real research before writing; `quality-gate` is the final checklist with an AI-tone veto; `feedback-capture` turns your corrections into persistent rules), pre-publish checks (`opening-gate` for hooks/titles, `flow-check` for drop-off points), judgment layers (`business-thinking`, `human-psychology-game`, `concept-check` for catching empty jargon and fuzzy concepts), and workflow parts (`content-positioning`, `topic-strategy`, `platform-distribution`, `visual-aesthetic`).
 
 **Install:**
 ```bash
@@ -70,6 +70,7 @@ License: MIT. Full skill tables and the recommended pipeline are in the Chinese 
 | --- | --- |
 | [business-thinking](skills/business-thinking/) | 商业思维。真伪需求 → 产品翻译 → 六类购买阻力 → 内容角色 → 商业落点。落点必须是明天就能做的具体动作。 |
 | [human-psychology-game](skills/human-psychology-game/) | 用户心理。七类心理状态 → 还原"不会说出口的内心独白" → 六种锚点 → 落到一句具体的话。 |
+| [concept-check](skills/concept-check/) | 概念核验。贴身模式：一个词该不该留，三问自检 + 行业黑话豁免。深挖模式：一个模糊概念是不是没被想清楚——各说各话对齐、往回倒查原意、两道真假测试、判断是信息缺口还是执行缺口。 |
 
 ### 工作流零件类
 
@@ -123,6 +124,8 @@ feedback-capture（人工反馈后：沉淀规则）
 ```
 
 两个星号的闸门是这套系统里最值钱的部分：**写前有料、写后有关**。中间的写稿流程你可以用自己的。
+
+`concept-check` 不在这条链上，是随时能插的判断工具：写稿时纠结一个词该不该留、或者讨论中冒出一个自己都没想清楚的概念，随时调用。
 
 ## 这套技能不包含什么
 
