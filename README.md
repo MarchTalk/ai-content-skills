@@ -26,11 +26,9 @@ This is not a prompt collection — it's a set of **quality-gated content workfl
 **Skills at a glance** — gates (`material-research` forces real research before writing, with an optional deepen-the-take step; `quality-gate` is the final checklist with an AI-tone veto), an adversarial review (`adversarial-gate` pressure-tests a thesis before you draft it, then audits the finished draft for sycophantic "polish without progress"), judgment layers (`buyer-psychology` for purchase resistance and unspoken user psychology, `concept-check` for catching empty jargon and fuzzy concepts), an organizer (`organize` turns a free-form deep-dig conversation into a faithful, complete draft), and workflow parts (`content-positioning`, `topic-strategy`, `platform-distribution`).
 
 **Install:**
-```bash
-git clone https://github.com/MarchTalk/ai-content-skills.git
-cp -r ai-content-skills/skills/* ~/.claude/skills/
-```
-Then restart Claude Code and call skills via `/quality-gate`, `/material-research`, etc., or just describe what you need — the skills are plain Markdown, so they also work in any agent that supports skill/instruction files (Codex included).
+Download the **v1.2.0** bundle from [Releases](https://github.com/MarchTalk/ai-content-skills/releases/tag/v1.2.0), then follow [INSTALL.md](INSTALL.md). It contains the same nine skills listed below, with no changes to their instruction text. Older releases are retained as historical versions and contain a different skill selection.
+
+For local project use, copy only the skill folders you need into `.agents/skills/` for Codex or `.claude/skills/` for Claude Code. Check existing folders before copying; do not silently overwrite a same-named skill. Confirm that the client recognizes the skill before using it. The bundle is a collection of local instruction files, not a one-click web-chat plugin.
 
 License: MIT. Full skill tables and the recommended pipeline are in the Chinese section below (skill names and file paths are in English regardless).
 
@@ -92,18 +90,21 @@ License: MIT. Full skill tables and the recommended pipeline are in the Chinese 
 
 ## 安装
 
-**不用命令行（推荐给非技术用户）**：去 [Releases 页面](https://github.com/MarchTalk/ai-content-skills/releases) 下载 zip 安装包，里面有一份三分钟装好的《安装说明.txt》（Mac / Windows 都有），解压拷贝即用。
+**第一次使用**：下载 [v1.2.0 安装包](https://github.com/MarchTalk/ai-content-skills/releases/tag/v1.2.0)，按 [安装说明](INSTALL.md) 操作。包内同时提供《安装说明.txt》；从 `quality-gate` 一个技能开始即可，不必一次装完。
 
-**Claude Code（命令行）**：把 `skills/` 下你要的技能文件夹拷进 `~/.claude/skills/`（全局）或项目的 `.claude/skills/`：
+**本版本恰好包含上表九份方法**，与仓库 `skills/` 当前目录一致，九份 `SKILL.md` 正文未改。v1.0／v1.1 继续作为历史版本保留，技能组合不同；不要把旧包当作当前九方法的安装包。
+
+本地项目目录：Codex 使用 `.agents/skills/<技能名>/SKILL.md`，Claude Code 使用 `.claude/skills/<技能名>/SKILL.md`。复制前先检查同名目录，不默认覆盖已有技能；个人目录、Mac／Windows 路径及识别验证见[安装说明](INSTALL.md)。这些是给 AI 助手读取的工作说明，不是网页插件；本地复制也不代表所有云端会话都会加载。
+
+**熟悉 Git 的用户**仍可获取当前源码：
 
 ```bash
 git clone https://github.com/MarchTalk/ai-content-skills.git
-cp -r ai-content-skills/skills/* ~/.claude/skills/
 ```
 
-重启 Claude Code 后用 `/material-research`、`/quality-gate` 等方式调用，或直接说"帮我质检这条稿子"让它自动路由。
+然后按安装说明选择需要的技能文件夹，不直接批量覆盖个人目录。
 
-**其他 Agent（Codex 等）**：这些技能就是纯 Markdown 的流程说明书，放进任何支持技能 / 指令文件的 Agent 里都能用。
+**其他 Agent**：请先核对该产品的 Skill／指令加载方式。本仓库不承诺所有产品都支持相同路径、命令或自动调用。
 
 ## 建议的串联方式
 
